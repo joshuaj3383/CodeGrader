@@ -10,10 +10,10 @@ python3 grader.py --folderPath --expectedOutput.txt --projDescription.txt (optio
 It will go through each project in folderPath, unzip the project, compile all the java class
 and then execute the file containing main and compare the result to the expected output.
 
-DEMO:
-python grader.py --folderPath /home/him/Code/PyCharm/JavaGrader/Test1/testFiles --projDescription /home/him/Code/PyCharm/JavaGrader/Test1/test1ProjDesc.txt --expectedOutput /home/him/Code/PyCharm/JavaGrader/Test1/test1Output.txt
+DEMO (FILL IN APPROPRIATE PATHS):
+python grader.py --folderPath /Test1/testFiles --projDescription /Test1/test1ProjDesc.txt --expectedOutput /Test1/test1Output.txt
 
-python grader.py --folderPath /home/him/Code/PyCharm/JavaGrader/Test2/projects --projDescription /home/him/Code/PyCharm/JavaGrader/Test2/desc.txt --expectedOutput /home/him/Code/PyCharm/JavaGrader/Test2/exp.txt
+python grader.py --folderPath /Test2/projects --projDescription /Test2/desc.txt --expectedOutput /Test2/exp.txt
 """
 
 import argparse, os, json, sys, pprint
