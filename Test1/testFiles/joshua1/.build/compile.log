@@ -1,0 +1,21 @@
+/home/him/Code/PyCharm/JavaGrader/Test1/testFiles/joshua1/Counter.java:9: error: cannot find symbol
+        for (i = 1; i <= 10; i++) {
+             ^
+  symbol:   variable i
+  location: class Counter
+/home/him/Code/PyCharm/JavaGrader/Test1/testFiles/joshua1/Counter.java:9: error: cannot find symbol
+        for (i = 1; i <= 10; i++) {
+                    ^
+  symbol:   variable i
+  location: class Counter
+/home/him/Code/PyCharm/JavaGrader/Test1/testFiles/joshua1/Counter.java:9: error: cannot find symbol
+        for (i = 1; i <= 10; i++) {
+                             ^
+  symbol:   variable i
+  location: class Counter
+/home/him/Code/PyCharm/JavaGrader/Test1/testFiles/joshua1/Counter.java:10: error: cannot find symbol
+            System.out.println("Count: " + i);
+                                           ^
+  symbol:   variable i
+  location: class Counter
+4 errors

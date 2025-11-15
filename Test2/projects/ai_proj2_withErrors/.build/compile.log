@@ -1,0 +1,12 @@
+/home/him/Code/PyCharm/JavaGrader/Test2/projects/ai_proj2_withErrors/DoubleLinkedList.java:219: error: incompatible types: inference variable T#1 has incompatible bounds
+            casted.sort(Comparator.naturalOrder());
+                  ^
+    upper bounds: CAP#1,Comparable<? super T#1>
+    lower bounds: Comparable<? super T#2>
+  where T#1,T#2 are type-variables:
+    T#1 extends Comparable<? super T#1> declared in method <T#1>naturalOrder()
+    T#2 extends Object declared in class DoubleLinkedList
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object super: T#2 from capture of ? super T#2
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error

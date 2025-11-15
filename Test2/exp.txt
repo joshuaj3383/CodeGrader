@@ -1,0 +1,15 @@
+Initial list: [1, 2, 3, 4, 5]
+Initial fingers:
+Finger: 1 1
+Finger: 3 3
+Finger: 5 5
+
+After remove(1): list: [2, 3, 4, 5]
+Fingers after removal (expected to be STALE):
+Finger: 1 2
+Finger: 3 4
+Finger: 4 5
+
+getEntry(1) = 2
+getEntry(4) = 5
+toArray(): [2, 3, 4, 5]

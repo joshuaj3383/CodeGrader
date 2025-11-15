@@ -1,0 +1,75 @@
+# CSC-242 Programming Project 2 — Doubly Linked List + Finger Searching (Summary & 0–4 Rubric)
+
+## What you’re building (short version)
+
+* **Phase I – Doubly Linked List:** Create `DoubleNode<T>` (prev/next) and `DoubleLinkedList<T>`. Update constructors, `insert`, `remove` to maintain `prev`. Add `getIndexOf(key)`. Override `toString()` as specified.
+* **Phase II – Finger Searching:** Implement a `Finger` class and add a **fingers array** to `DoubleLinkedList`. Implement `updateFinger()`, `getClosest(idx)`, and modify `getNodeAt()` to use the nearest finger or head (move forward/backward as needed). Call `updateFinger()` after inserts/removes.
+* **Phase III – Simulator:** Read `commands.csv` to execute operations. Implement `sort(Comparator)` and support `print 0` (unsorted) and `print 1` (sorted) in the simulator class. You do not need to implement this into your linked list
+* **Submission & rules:** Work alone; thoroughly test. Code that doesn’t compile caps at 70%. Submit a **zip of the project folder** named `<lastname>2.zip` by **Oct 8, 2025**; not following packaging can lose up to 5 points. Grading categories are listed below.
+
+---
+
+## Grading criteria (score each 0–4)
+
+### 1) Style & Comments (was 20 pts)
+
+**4** — Consistent course style throughout; clear, purposeful inline comments; clean naming; no dead code.
+**3** — Minor style lapses; comments generally helpful; small inconsistencies.
+**2** — Noticeable style issues; sparse/obvious comments; some confusing spots.
+**1** — Poor style; few or unhelpful comments; hard to read/maintain.
+**0** — Little to no adherence to style; essentially uncommented.
+
+### 2) Tests / Program passes tests (was 10 pts)
+
+**4** — All provided/implicit tests pass; good coverage of edge cases (empty list, head/tail ops, not found).
+**3** — Most tests pass; a rare edge-case failure.
+**2** — Mixed results; multiple edge-case failures.
+**1** — Compiles but fails many core behaviors.
+**0** — Does not compile or immediately fails basic tests. *(Reminder: non-compiling code ≤ 70% overall.)*
+
+### 3) Doubly Linked List correctness (was 20 pts)
+
+**4** — `prev` maintained correctly in all constructors/`insert`/`remove`; `getIndexOf` accurate; `toString` matches spec exactly (including “Empty List.”).
+**3** — Correct for typical cases; a minor pointer or boundary slip (e.g., tail removal).
+**2** — Functional but with bugs around head/tail/middle updates or off-by-one indices.
+**1** — Major pointer maintenance errors; frequent corruption.
+**0** — Not implemented or nonfunctional.
+
+### 4) Finger Searching implementation (was 20 pts)
+
+**4** — `Finger` class correct; `fingers` array allocated by default (size 2); `updateFinger()` distributes fingers across the list; `getClosest(idx)` correctly chooses nearest reference (head vs. finger) by |x₂−x₁|; `getNodeAt()` uses closest finger and traverses forward/backward appropriately.
+**3** — Works in general; small inefficiency or occasional off-by-one in closest selection.
+**2** — Partially integrated; fingers not reliably updated after insert/remove or traversal direction mishandled.
+**1** — Present but largely unused/incorrect.
+**0** — Missing.
+
+### 5) Main / Simulator (was 10 pts)
+
+**4** — Reads `commands.csv`; executes commands correctly; supports `print 0|1`; robust to malformed rows.
+**3** — Works with expected input; minor formatting or error-handling gaps.
+**2** — Runs but mishandles some commands or prints.
+**1** — Barely functional; limited command support.
+**0** — Missing.
+
+### 6) Comparator & Sort (was 20 pts)
+
+**4** — `sort(Comparator)` implemented cleanly; stable/useful approach; integrates with `print 1`; no structural corruption.
+**3** — Generally correct; minor inefficiencies or rare ordering glitches.
+**2** — Sort present but buggy on duplicates/boundaries; occasional corruption.
+**1** — Attempted but mostly incorrect.
+**0** — Missing.
+
+---
+
+## Scoring & submission checklist
+
+* **Score each category 0–4**; you can sum (max 24) or average (0–4 scale).
+* **Before submitting:**
+
+  * All phases present (I–III).
+  * Fingers updated after every insert/remove.
+  * `getNodeAt()` uses `getClosest()`.
+  * `toString()` and `getIndexOf()` match spec.
+  * Zip name is `<lastname>2.zip`; compiles; passes your tests.
+
+If you want, I can convert this into a one-page rubric sheet.
